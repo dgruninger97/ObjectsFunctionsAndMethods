@@ -26,16 +26,16 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #              downwards
 #
 #     b. Write a line of code that constructs a basic RoseWindow object:
-#            window = rg.RoseWindow()
+#       window = rg.RoseWindow()
 #
 #     c. What is the default height of a RoseWindow?
 #        (Type the code shown in your answer above within main to see if PyCharm will help you figure out the answer.
 #         Hint: After you type the ( in the line of code, if you wait a moment PyCharm will add the ) and has a popup.)
-           rg.RoseWindow
+#          width = 400, height = 300
 #
-#     d. Write a line of code that construct a RoseWindow object whose height is 100 with any width you choose.
+#     d. Write a line of code that constructs a RoseWindow object whose height is 100 with any width you choose.
 #         (again try to use PyCharm's hints to help you figure it out)
-#            WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#
 #
 #     e. Use the DOT trick to answer the following:
 #
@@ -66,8 +66,10 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 
 import rosegraphics as rg
 window = rg.RoseWindow()
+window2 = rg.RoseWindow(50,100)
 
 def main():
+    window = rg.RoseWindow()
     """
     Uses ROSEGRAPHICS to demonstrate:
       -- CONSTRUCTING objects,
@@ -97,7 +99,7 @@ def example2():
     # Note: the y-axis goes DOWN from the TOP.
     # ------------------------------------------------------------------
     point1 = rg.Point(0, 0)
-    point2 = rg.Point(10, 10)
+    point2 = rg.Point(20, 20)
 
     # ------------------------------------------------------------------
     # A RoseGraphics object is not associated with a window,

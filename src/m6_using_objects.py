@@ -123,7 +123,8 @@ def lines():
     line2.attach_to(window)
     line1.thickness = 5
     print(line1.get_midpoint())
-    print(line1.get_midpoint())
+    print((start1.x + end1.x)/2 )
+    print((start1.y + end1.y)/2)
     window.render()
     window.close_on_mouse_click()
     """
@@ -148,7 +149,7 @@ def lines():
     -- Waits for the user to press the mouse, then closes the window.
     """
     # ------------------------------------------------------------------
-    # TODO: 4. Implement and test this function.
+    # DONE: 4. Implement and test this function.
     # ------------------------------------------------------------------
 
 
